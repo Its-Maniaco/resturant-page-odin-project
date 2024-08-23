@@ -56,3 +56,44 @@ nav button:hover {
     line-height: 1.6;
     margin-top: 20px;
 }
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.menu-block {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-block h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.menu-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-block li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}

@@ -1,7 +1,6 @@
 import { About } from "./about";
 import Home from "./home";
-import { Menu } from "./menu";
-
+import Menu from "./menu";
 import "./styles.css";
  
 document.getElementById("home").addEventListener("click", () => {
@@ -15,10 +14,10 @@ function showAbout() {
     About();
 }
 
-function showMenu() {
+document.getElementById("menu").addEventListener("click", () => {
     clearContents();
     Menu();
-}
+})
 
 // clear content of 'content' element
 function clearContents() {

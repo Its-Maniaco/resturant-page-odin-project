@@ -3,8 +3,6 @@ import resturantImage from "../public/img/resturant.jpg";
 export default function Home() {
     const content = document.getElementById("content");
 
-    content.innerHTML = '';
-
     const heading = document.createElement("h1");
     heading.textContent = "Welcome to The FooD Resturant";
     content.appendChild(heading);
