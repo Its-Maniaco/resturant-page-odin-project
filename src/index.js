@@ -3,16 +3,25 @@ import Home from "./home";
 import { Menu } from "./menu";
 
 import "./styles.css";
-
-//TODO: add clear content to remove old content which will be replaced.
+ 
 document.getElementById("home").addEventListener("click", () => {
+    clearContents();
     Home();
 })
 
 function showAbout() {
+    clearContents();
+
     About();
 }
 
 function showMenu() {
+    clearContents();
     Menu();
+}
+
+// clear content of 'content' element
+function clearContents() {
+    const content = document.getElementById("content");
+    content.innerHTML = '';
 }
